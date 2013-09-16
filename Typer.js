@@ -69,7 +69,7 @@ Typer.prototype.type = function(text, cps, callback) {
 	this.stopCursor(true);
 	var characters = text.split(''), typer = this;
 	this.timers.typing = setInterval(function() {
-		console.log(characters.length);
+		
 		if (characters.length > 0) {
 			typer.targetText.innerHTML += characters.shift();
 		}
