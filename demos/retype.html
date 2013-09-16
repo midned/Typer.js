@@ -24,8 +24,7 @@
 			(function() {
 				'use strict';
 
-				var target = document.getElementById('target'),
-					typer = new Typer(target);
+				var typer = new Typer('div.panel div#target'); // will automatically call `querySelector`
 
 				typer.write('This text is sexy (as your moth', function() {
 					typer.retype('This text is sexy');

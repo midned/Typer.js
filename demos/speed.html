@@ -24,8 +24,7 @@
 			(function() {
 				'use strict';
 
-				var target = document.getElementById('target'),
-					typer = new Typer(target);
+				var typer = new Typer('div#target'); // will automatically call `querySelector`
 
 				typer.write('Let\'s go at maximum speed brah. ', 70, function() {
 					// let's wait a second

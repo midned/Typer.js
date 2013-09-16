@@ -24,8 +24,7 @@
 			(function() {
 				'use strict';
 
-				var target = document.getElementById('target'),
-					typer = new Typer(target);
+				var typer = new Typer('#target');// if the first character in the parameter is '#' it will automatically call  `getElementById`
 
 				typer.retypeInterval(['This is very cool', 'This is awesome', 'This is kinda cool', 'This is acceptable (lie)'], 1000);
 			})();
